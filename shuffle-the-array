@@ -1,0 +1,12 @@
+var shuffle = function(nums, n) {
+    let temp=[];
+    let result=[];
+    for(let i=0; i< nums.length; i++){
+            temp.push(...nums.slice(n, nums.length));
+            for(let j=0; j<temp.length; j++){
+            result.push(nums[j]);
+            result.push(temp[j]);
+        }
+        return result
+        }
+};
